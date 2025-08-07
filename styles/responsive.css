@@ -1,0 +1,241 @@
+/* Адаптивность */
+
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 18px;
+    }
+    
+    .anime-hero-title {
+        font-size: 36px;
+    }
+    
+    .anime-hero-content {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .header-content {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .nav-link {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 30px 0;
+    }
+    
+    .anime-hero {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    
+    .anime-hero-title {
+        font-size: 28px;
+    }
+    
+    .anime-hero-content {
+        padding: 20px;
+    }
+    
+    .anime-description {
+        font-size: 16px;
+    }
+    
+    .anime-meta {
+        gap: 10px;
+    }
+    
+    .anime-meta span {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+    
+    .episodes-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .episode-item {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .episode-number {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .episode-info h4 {
+        font-size: 16px;
+    }
+    
+    .episode-info p {
+        font-size: 13px;
+    }
+    
+    .video-container {
+        height: 50vh;
+        border-radius: 0;
+        margin: 10px 0;
+    }
+    
+    .episode-navigation {
+        gap: 20px;
+        padding: 20px 0;
+        flex-wrap: wrap;
+    }
+    
+    .back-to-anime-btn {
+        position: static;
+        order: -1;
+        margin-bottom: 10px;
+    }
+    
+    .nav-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+    
+    .episode-counter {
+        font-size: 16px;
+    }
+    
+    .support-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .support-link {
+        width: 200px;
+        text-align: center;
+    }
+    
+    .support-content h1 {
+        font-size: 36px;
+    }
+    
+    .support-content p {
+        font-size: 18px;
+    }
+    
+    .contacts-links {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .contact-link {
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    .contacts-content h1 {
+        font-size: 36px;
+    }
+    
+    .contacts-content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+    
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-subtitle {
+        font-size: 14px;
+    }
+    
+    .anime-hero {
+        height: 250px;
+    }
+    
+    .anime-hero-title {
+        font-size: 24px;
+    }
+    
+    .anime-description {
+        font-size: 14px;
+    }
+    
+    .episodes-title {
+        font-size: 20px;
+    }
+    
+    .episode-item {
+        padding: 12px;
+        gap: 12px;
+    }
+    
+    .episode-number {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .episode-info h4 {
+        font-size: 14px;
+    }
+    
+    .episode-info p {
+        font-size: 12px;
+    }
+    
+    .video-container {
+        height: 50vh;
+    }
+    
+    .episode-navigation {
+        gap: 15px;
+        padding: 15px 0;
+    }
+    
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .episode-counter {
+        font-size: 14px;
+        min-width: 60px;
+    }
+    
+    .back-to-anime-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}

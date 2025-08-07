@@ -1,0 +1,265 @@
+/* Оптимизированные стили в стиле Crunchyroll */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --green: #00ff00;
+    --purple: #8b00ff;
+    --red: #ff4444;
+    --red-hover: #ff6666;
+    --white: #ffffff;
+    --gray: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--black) 0%, #111111 100%);
+    color: var(--white);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid var(--gray);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--red);
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 2px solid var(--red);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.nav-link:hover {
+    background: var(--red);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Contacts page */
+.contacts-content {
+    text-align: center;
+    padding: 80px 0;
+    background: #1a1a1a;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.contacts-content h1 {
+    font-size: 48px;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.contacts-content p {
+    font-size: 22px;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+.contacts-description {
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacts-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: var(--white);
+    background: var(--gray);
+    border: 2px solid transparent;
+}
+
+.contact-link:hover {
+    transform: translateY(-3px);
+    border-color: var(--red);
+    background: var(--red);
+}
+
+.contact-icon {
+    font-size: 24px;
+}
+
+/* Pages */
+.page {
+    display: none;
+    min-height: calc(100vh - 70px);
+}
+
+.page.active {
+    display: block;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 0 40px 0;
+    background: linear-gradient(135deg, var(--black) 0%, #111111 100%);
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #cccccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Back button */
+.back-btn {
+    background: var(--red);
+    border: none;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 30px 0 20px 0;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: var(--red-hover);
+    transform: translateY(-2px);
+}
+
+/* Loading */
+.loading {
+    text-align: center;
+    padding: 60px 0;
+    color: #cccccc;
+    font-size: 20px;
+}
+
+/* Support page */
+.support-content {
+    text-align: center;
+    padding: 80px 0;
+    background: #1a1a1a;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.support-content h1 {
+    font-size: 48px;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.support-content p {
+    font-size: 22px;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+.support-description {
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.support-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.support-link {
+    display: inline-block;
+    padding: 18px 36px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: var(--white);
+}
+
+.support-link.boosty {
+    background: var(--red);
+}
+
+.support-link.patreon {
+    background: var(--red-hover);
+}
+
+.support-link:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
